@@ -15,8 +15,12 @@ html, body {
     margin: 0 auto;
 }
 
-.logo {}
-
+.logo {
+    transition: all 0.3s;
+}
+.logo:hover {
+    transform: scale(1.05);
+}
 /* ------------------------------ */
 .header {
     font-size: 16px;
@@ -53,17 +57,22 @@ html, body {
 
 .header__miniline {
     display: flex;
-    margin-right:  1.7rem;
+    margin-right: 1.7rem;
     margin-left: 2px;
     align-items: center;
     justify-content: center;
-        
+
 }
 
 .header__nav-link {
     font-weight: 600;
     line-height: 1.75;
     white-space: nowrap;
+    transition: all .3s;
+}
+
+.header__nav-link:hover {
+    color:#504e4e98;
 }
 
 .header__assistance {
@@ -71,8 +80,9 @@ html, body {
     justify-content: center;
     align-items: center;
     white-space: nowrap;
+    
 }
-
+/* color:#504e4e98; */
 .header__assistance-logo {
     transform: scale(0.8);
     margin-right: 0.5em;
@@ -82,6 +92,14 @@ html, body {
     line-height: 1.5;
     font-weight: 600;
     font-size: 18px;
+    
+}
+.header__assistance-info a {
+    transition: all .3s;
+}
+.header__assistance-info a:hover {
+   color:#504e4e98; 
+   
 }
 .header__assistance-info h2 {
     line-height: 1.5;
