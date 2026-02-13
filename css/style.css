@@ -1,6 +1,6 @@
 html, body {
     font-size: 16px;
-    font-family: Manrop, sans-serif;
+    font-family: Manrope, sans-serif;
 }
 
 .wrapper {
@@ -44,7 +44,7 @@ html, body {
 }
 
 .header__nav-item {
-    margin: 0 40px;
+    margin: 0 20px;
 }
 
 .header__nav-item:first-child {
@@ -52,8 +52,12 @@ html, body {
 }
 
 .header__miniline {
-    margin-right: 1.7rem;
-    margin-top: 2px;
+    display: flex;
+    margin-right:  1.7rem;
+    margin-left: 2px;
+    align-items: center;
+    justify-content: center;
+        
 }
 
 .header__nav-link {
@@ -62,21 +66,28 @@ html, body {
     white-space: nowrap;
 }
 
-.header__nav--assistance {
+.header__assistance {
     display: flex;
     justify-content: center;
     align-items: center;
     white-space: nowrap;
 }
 
-.assistance-logo {
+.header__assistance-logo {
     transform: scale(0.8);
     margin-right: 0.5em;
 }
 
-.assistance-info {
+.header__assistance-info {
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 18px;
+}
+.header__assistance-info h2 {
     line-height: 1.5;
     font-weight: 500;
+    opacity: 70%;
+    font-size: 16px;
 }
 
 /* ------------------top закончили */
