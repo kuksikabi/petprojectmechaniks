@@ -1,0 +1,1 @@
+var mixer = mixitup('.blog__card-list');
