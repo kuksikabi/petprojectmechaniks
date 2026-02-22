@@ -33,4 +33,9 @@ $(function () {
     e.preventDefault();
     $(".customers__list").slick("slickNext");
   });
+  $('.questions__item-link').on('click', function(e){
+    e.preventDefault()
+    $(this).toggleClass('questions__item-link--active')
+    $(this).closest('.questions__item').find('.questions__item-text').slideToggle()
+  })
 });
