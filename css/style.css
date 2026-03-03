@@ -2131,5 +2131,14 @@
      }
 
      /* ========== */
-
+     .info__content{
+        display: flex;
+        flex-direction: column;
+     }
+     .info__title{
+        margin-bottom: 30px;
+     }
+     .info__heading{
+        margin-bottom: 30px;
+     }
  }
